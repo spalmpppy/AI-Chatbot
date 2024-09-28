@@ -7,7 +7,10 @@ st.title("MY AI-CHATBOT Application")
 chat_input = st.chat_input("ลองแชทดูสิ")
 
     # ขอรับ Gemini API Key จากผู้ใช้
-gemini_api_key = ""
+
+if "gemini_api_key" not in st.session_state:
+    st.session_state.gemini_api_key = None
+        
 gemini_api_key = st.text_input("Gemini API Key: ", placeholder="Type your API Key here...", type="password")
 
 # Initialize session state สำหรับเก็บประวัติการแชท
