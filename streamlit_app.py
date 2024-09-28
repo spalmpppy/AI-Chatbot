@@ -7,7 +7,7 @@ if "gemini_api_key" not in st.session_state:
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-st.title("Car Seller & Guru Gen-AI Application")
+st.title("Car Seller & Guru Application")
 
 # User input for chat
 chat_input = st.chat_input("ลองแชทดูสิ")
